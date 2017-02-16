@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Table from './Table';
 import './App.css';
 
@@ -11,16 +10,17 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div className='fixed-height-header'>
-          <h1> Fixed Height Header </h1>
-        </div>
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <div className='header-content'>
+            ~ Scroll to a row that is off screen.<br />
+            ~ Click in a cell in the first column.<br />
+            ~ The row will display with green hightlight.<br />
+            ~ In chrome, the table scrolls to the row.<br />
+            ~ In firefox, it scrolls to the top.<br />
+            <br />
+           In index.css removing position: absolute from .table-body-container fixes the problem <br />    
+          </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
         <div className='table-container'>
           <Table 
             data={data}/>
