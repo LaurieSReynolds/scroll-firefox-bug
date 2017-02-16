@@ -30,7 +30,7 @@ npm start
 Navigate to the appplication
 
 ```
-In a browser window, enter http://localhos:3000
+In a browser window, enter http://localhost:3000
 ```
 
 Steps to reproduce the problem
